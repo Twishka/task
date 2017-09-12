@@ -19,21 +19,23 @@ def make_number_list():
                 break
         else:
             lst.append(number)
-    return sorted(lst, reverse=True)
+    return lst
 
 
 def multiply(factors):
+    ls = []
     for i in factors:
         for j in factors:
             result = i * j
-            if check(result) is True:
-                return (result, (i, j))
+            if check(result) is True and result not in ls:
+                ls.append((result, (i, j)))
+    return sorted(ls, key=lambda ls: ls[0], reverse=True)[0]
 
 
 def main():
     factors = make_number_list()
     results = multiply(factors)
-    print(results)
+    return results
 
 
-main()
+print main()
