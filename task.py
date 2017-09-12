@@ -13,7 +13,7 @@ def check(result):
 def make_number_list():
     lst = []
 
-    for number in range(10000, 99999):
+    for number in range(10000, 100000):
         for i in range(2, int(sqrt(number))):
             if number % i == 0:
                 break
@@ -29,6 +29,7 @@ def multiply(factors):
             result = i * j
             if check(result) is True and result not in ls:
                 ls.append((result, (i, j)))
+        factors.remove(i)
     return sorted(ls, key=lambda ls: ls[0], reverse=True)[0]
 
 
