@@ -3,6 +3,7 @@ from math import sqrt
 
 def check(result):
     l = str(result)
+
     for i in range(len(l)/2):
         if l[i] != l[-i - 1]:
             return False
@@ -24,10 +25,11 @@ def make_number_list():
 
 def multiply(factors):
     ls = []
+
     for i in factors:
         for j in factors:
             result = i * j
-            if check(result) is True and result not in ls:
+            if check(result) is True:
                 ls.append((result, (i, j)))
         factors.remove(i)
     return sorted(ls, key=lambda ls: ls[0], reverse=True)[0]
