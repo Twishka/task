@@ -1,1 +1,5 @@
-This is the test task for the job I'm trying for. I know I'm not supposed to apply changes after I've sent my first try but I was so excited about the opportunity that I commited the code as soon as I got the correct result and after having a little rest I realized that it could work almost three times as fast with just one line added so I decided to update the program. Well, I guess this way my potential employer can learn more about me and see the way I think and the way I find the bugs and fix them.
+Задание:
+
+Напишите программу, которая возвращает наибольшее число палиндром, которое является произведением двух простых пятизначных чисел, а также возвращает сами сомножители.
+Простое число - это натуральное число, которое делится нацело только на 1 и на себя само (2, 3, 5, 7, 11, …)
+Палиндром – строка, которая читается одинаково в обоих направлениях (например ABBA)
